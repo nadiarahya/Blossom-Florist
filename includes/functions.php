@@ -55,6 +55,11 @@ function product_image($file)
     return 'uploads/products/' . $file;
 }
 
+function order_code($id)
+{
+    return 'BF-' . str_pad((int) $id, 4, '0', STR_PAD_LEFT);
+}
+
 function order_status_badge($status)
 {
     $map = [

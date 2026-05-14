@@ -109,8 +109,10 @@ $items = mysqli_query(
             Cetak Invoice
         </button>
 
-        <?php if (isset($_GET['wa'])): ?>
-            <a class="btn soft" href="<?= e($_GET['wa']); ?>">
+        <?php
+        $wa_link = isset($_GET['wa']) ? filter_var($_GET['wa'], FILTER_VALIDATE_URL) : false;
+        if ($wa_link && str_starts_with($wa_link, 'https://wa.me/')): ?>
+            <a class="btn soft" href="<?= e($wa_link); ?>">
                 Chat WhatsApp Toko
             </a>
         <?php endif; ?>

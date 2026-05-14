@@ -113,7 +113,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         . ". Mohon dikonfirmasi ya."
     );
 
-    header("Location: https://wa.me/628993332333?text=$msg");
+    $wa_url = urlencode("https://wa.me/628993332333?text=$msg");
+    header("Location: invoice.php?id=$order_id&wa=$wa_url");
     exit;
 }
 
