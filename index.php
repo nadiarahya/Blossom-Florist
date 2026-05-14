@@ -23,7 +23,7 @@
 
     <img
         class="hero-img"
-        src="assets/img/hero.svg"
+        src="assets/img/hero.jpg"
         alt="Blossom Florist"
     >
 </section>
