@@ -1,2 +1,0 @@
-<?php include '_header.php'; $members=mysqli_query($conn,"SELECT * FROM users WHERE role='member' ORDER BY id DESC"); ?>
-<div class="section-title"><h2>Data member</h2><p>Daftar pelanggan yang sudah register.</p></div><table><tr><th>Nama</th><th>Email</th><th>Telepon</th><th>Tanggal daftar</th></tr><?php while($m=mysqli_fetch_assoc($members)): ?><tr><td><?= e($m['name']); ?></td><td><?= e($m['email']); ?></td><td><?= e($m['phone']); ?></td><td><?= date('d M Y',strtotime($m['created_at'])); ?></td></tr><?php endwhile; ?></table><?php include '_footer.php'; ?>
