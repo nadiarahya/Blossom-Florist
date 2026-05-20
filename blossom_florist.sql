@@ -84,6 +84,7 @@ CREATE TABLE order_items (
 CREATE TABLE attendance (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
+    admin_name TEXT,
     note TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
