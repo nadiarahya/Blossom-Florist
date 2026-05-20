@@ -134,7 +134,7 @@ VALUES
         'Rangkaian lavender bernuansa calming untuk dekorasi meja dan hadiah yang menenangkan.',
         135000,
         12,
-        'assets/img/product-3.svg'
+        'assets/img/product-3.jpg'
     ),
     (
         'Tulip Sweet Mix',

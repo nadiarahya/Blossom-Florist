@@ -1,3 +1,9 @@
 .env
 .env.local
 .htaccess
+
+# Abaikan file upload, tapi tetap simpan struktur foldernya
+uploads/products/*
+uploads/payments/*
+!uploads/products/.gitkeep
+!uploads/payments/.gitkeep
