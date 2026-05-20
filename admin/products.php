@@ -89,7 +89,7 @@ $products = mysqli_query($conn, "SELECT * FROM products ORDER BY id DESC");
 ?>
 
 <?php if ($upload_error): ?>
-    <div class="alert danger"><?= e($upload_error); ?></div>
+    <div class="alert error"><?= e($upload_error); ?></div>
 <?php endif; ?>
 
 <div class="section-title">
