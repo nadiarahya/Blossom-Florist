@@ -8,18 +8,26 @@ function upload_product_image($old = '')
 
         if (in_array($ext, ['jpg', 'jpeg', 'png', 'webp', 'svg'])) {
             $name = 'produk_' . time() . '_' . rand(100, 999) . '.' . $ext;
+            $dest = __DIR__ . '/../uploads/products/' . $name;
 
-            move_uploaded_file(
-                $_FILES['image']['tmp_name'],
-                '../uploads/products/' . $name
-            );
+            if (!is_dir(dirname($dest))) {
+                mkdir(dirname($dest), 0777, true);
+            }
+
+            if (!move_uploaded_file($_FILES['image']['tmp_name'], $dest)) {
+                return ['error' => 'Gagal menyimpan gambar. Pastikan folder uploads/products/ bisa ditulis.'];
+            }
 
             return $name;
         }
+
+        return ['error' => 'Format file tidak didukung. Gunakan JPG, PNG, WebP, atau SVG.'];
     }
 
     return $old;
 }
+
+$upload_error = '';
 
 if (isset($_POST['save'])) {
     $name = mysqli_real_escape_string($conn, $_POST['name']);
@@ -29,6 +37,11 @@ if (isset($_POST['save'])) {
     $id = (int) ($_POST['id'] ?? 0);
     $old = $_POST['old_image'] ?? '';
     $image = upload_product_image($old);
+
+    if (is_array($image)) {
+        $upload_error = $image['error'];
+        $image = $old;
+    }
 
     if ($id > 0) {
         mysqli_query(
@@ -74,6 +87,10 @@ if (isset($_GET['edit'])) {
 
 $products = mysqli_query($conn, "SELECT * FROM products ORDER BY id DESC");
 ?>
+
+<?php if ($upload_error): ?>
+    <div class="alert danger"><?= e($upload_error); ?></div>
+<?php endif; ?>
 
 <div class="section-title">
     <h2>Kelola produk</h2>
