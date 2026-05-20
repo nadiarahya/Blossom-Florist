@@ -93,7 +93,7 @@ $products = mysqli_query($conn, "SELECT * FROM products ORDER BY id DESC");
             required
         >
 
-        <label>Harga</label>
+        <label>Harga per tangkai</label>
         <input
             type="number"
             name="price"
@@ -101,7 +101,7 @@ $products = mysqli_query($conn, "SELECT * FROM products ORDER BY id DESC");
             required
         >
 
-        <label>Stok</label>
+        <label>Stok tangkai</label>
         <input
             type="number"
             name="stock"
@@ -128,6 +128,7 @@ $products = mysqli_query($conn, "SELECT * FROM products ORDER BY id DESC");
     <div class="card preview-card">
         <h2>Preview foto produk</h2>
         <p class="muted">
+            Pastikan foto produk terlihat jelas dan sesuai dengan bunga yang dijual.
         </p>
 
         <div class="preview-box">
@@ -162,8 +163,8 @@ $products = mysqli_query($conn, "SELECT * FROM products ORDER BY id DESC");
         <tr>
             <th>Foto</th>
             <th>Produk</th>
-            <th>Harga</th>
-            <th>Stok</th>
+            <th>Harga per tangkai</th>
+            <th>Stok tangkai</th>
             <th>Aksi</th>
         </tr>
 
@@ -173,6 +174,7 @@ $products = mysqli_query($conn, "SELECT * FROM products ORDER BY id DESC");
                     <img
                         class="small-img"
                         src="../<?= product_image($p['image']); ?>"
+                        alt="<?= e($p['name']); ?>"
                     >
                 </td>
 
@@ -183,8 +185,8 @@ $products = mysqli_query($conn, "SELECT * FROM products ORDER BY id DESC");
                     </span>
                 </td>
 
-                <td><?= rupiah($p['price']); ?></td>
-                <td><?= $p['stock']; ?></td>
+                <td><?= rupiah($p['price']); ?> / tangkai</td>
+                <td><?= $p['stock']; ?> tangkai</td>
 
                 <td class="admin-actions">
                     <a class="btn soft" href="products.php?edit=<?= $p['id']; ?>">

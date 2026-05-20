@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                  VALUES('$name','$email','$phone','$password','member')"
             );
 
-            $success = 'Registrasi berhasil. Silakan login sebagai pelanggan.';
+            $success = 'Registrasi berhasil. Silakan login.';
         }
     }
 
@@ -63,10 +63,6 @@ include 'includes/header.php';
 
 <div class="section-title">
     <h2>Login</h2>
-    <p>
-        Satu halaman untuk pelanggan baru, pelanggan lama,
-        dan admin Blossom Florist.
-    </p>
 </div>
 
 <?php if ($success): ?>
@@ -86,7 +82,7 @@ include 'includes/header.php';
         <h2>Login pelanggan / admin</h2>
 
         <p class="muted">
-            Admin memakai akun khusus dan otomatis masuk ke dashboard admin.
+            Admin memakai akun khusus dari toko.
         </p>
 
         <form method="post">
@@ -123,7 +119,7 @@ include 'includes/header.php';
             <input type="password" name="password" required>
 
             <button class="btn" type="submit">
-                Daftar Member
+                Daftar
             </button>
         </form>
     </div>

@@ -185,7 +185,7 @@ include 'includes/header.php';
         <img src="assets/img/qris.jpg" alt="QRIS Blossom Florist">
 
         <p class="qris-name">
-            Atas nama: <b>Blossom Florist</b>
+            A/N : <b>Blossom Florist</b>
         </p>
 
         <p class="muted">

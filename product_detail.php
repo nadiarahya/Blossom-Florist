@@ -121,7 +121,7 @@ if (!$p) {
             <select name="rating">
                 <option value="5">5 - Sangat suka</option>
                 <option value="4">4 - Bagus</option>
-                <option value="3">3 - Cukup</option>
+                <option value="3">3 - Kurang suka</option>
             </select>
 
             <label>Komentar</label>

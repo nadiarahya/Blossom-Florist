@@ -11,7 +11,7 @@ $products = mysqli_query(
 ?>
 
 <div class="section-title">
-    <h2>Katalog bunga</h2>
+    <h2>Katalog produk</h2>
 </div>
 
 <section class="product-grid">

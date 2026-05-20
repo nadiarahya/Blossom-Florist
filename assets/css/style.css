@@ -1,14 +1,14 @@
 :root {
-    --dark: #173b3f;
-    --deep: #23535a;
-    --mint: #bcead5;
-    --aqua: #bde7ed;
-    --cream: #f7fbf5;
-    --pink: #f7d9df;
-    --text: #21393c;
-    --muted: #617579;
+    --dark: #173f5f;
+    --deep: #2d6f88;
+    --mint: #c9f3ec;
+    --aqua: #c8eefd;
+    --cream: #f4fbff;
+    --pink: #dceeff;
+    --text: #1f3d4d;
+    --muted: #6a8490;
     --card: #ffffff;
-    --shadow: 0 18px 45px rgba(23, 59, 63, .13);
+    --shadow: 0 18px 45px rgba(23, 63, 95, .14);
     --radius: 24px;
 }
 
@@ -18,7 +18,7 @@
 
 body {
     margin: 0;
-    background: linear-gradient(135deg, #f7fbf5 0%, #e9faf5 45%, #e5f3f7 100%);
+    background: linear-gradient(135deg, #f4fbff 0%, #e2f6ff 42%, #d9f7f2 100%);
     color: var(--text);
     font-family: 'Quicksand', sans-serif;
     min-height: 100vh;
@@ -38,9 +38,9 @@ a {
     align-items: center;
     gap: 18px;
     padding: 18px 6%;
-    background: rgba(247, 251, 245, .82);
+    background: rgba(244, 251, 255, .86);
     backdrop-filter: blur(16px);
-    border-bottom: 1px solid rgba(35, 83, 90, .11);
+    border-bottom: 1px solid rgba(45, 111, 136, .13);
 }
 
 .brand {
@@ -52,7 +52,7 @@ a {
 }
 
 .brand span {
-    color: #5db79d;
+    color: #61bfc1;
 }
 
 .main-nav {
@@ -94,7 +94,7 @@ main {
     gap: 32px;
     align-items: center;
     padding: 38px;
-    background: linear-gradient(135deg, rgba(188, 234, 213, .85), rgba(189, 231, 237, .75));
+    background: linear-gradient(135deg, rgba(200, 238, 253, .92), rgba(201, 243, 236, .78));
     border-radius: 36px;
     box-shadow: var(--shadow);
     overflow: hidden;
@@ -123,7 +123,7 @@ main {
 .hero p {
     font-size: 18px;
     line-height: 1.7;
-    color: #35565b;
+    color: #375a6b;
 }
 
 .hero-img {
@@ -142,7 +142,7 @@ main {
     cursor: pointer;
     background: var(--dark);
     color: white;
-    box-shadow: 0 10px 22px rgba(23, 59, 63, .18);
+    box-shadow: 0 10px 22px rgba(23, 63, 95, .22);
 }
 
 .btn.secondary {
@@ -151,13 +151,13 @@ main {
 }
 
 .btn.soft {
-    background: #d8f3ec;
+    background: #d8f3ff;
     color: var(--deep);
     box-shadow: none;
 }
 
 .btn.danger {
-    background: #c94f5b;
+    background: #c9586b;
 }
 
 .hero-actions {
@@ -192,8 +192,8 @@ main {
 }
 
 .card {
-    background: rgba(255, 255, 255, .88);
-    border: 1px solid rgba(35, 83, 90, .09);
+    background: rgba(255, 255, 255, .9);
+    border: 1px solid rgba(45, 111, 136, .1);
     border-radius: var(--radius);
     padding: 22px;
     box-shadow: var(--shadow);
@@ -214,7 +214,7 @@ main {
 }
 
 .contact-strip {
-    background: var(--dark);
+    background: linear-gradient(135deg, #173f5f, #255f78);
     color: white;
     border-radius: 30px;
     padding: 28px;
@@ -225,7 +225,7 @@ main {
 }
 
 .contact-strip p {
-    color: #d9f4ef;
+    color: #d9f5ff;
 }
 
 .product-grid {
@@ -239,7 +239,7 @@ main {
     border-radius: 26px;
     overflow: hidden;
     box-shadow: var(--shadow);
-    border: 1px solid rgba(35, 83, 90, .1);
+    border: 1px solid rgba(45, 111, 136, .11);
     display: flex;
     flex-direction: column;
 }
@@ -248,7 +248,7 @@ main {
     width: 100%;
     height: 190px;
     object-fit: cover;
-    background: #eaf7f3;
+    background: #e3f7ff;
 }
 
 .product-body {
@@ -261,7 +261,7 @@ main {
 
 .price {
     font-weight: 900;
-    color: #297668;
+    color: #247c93;
     font-size: 18px;
 }
 
@@ -279,18 +279,18 @@ main {
 }
 
 .badge.warning {
-    background: #fff2c7;
+    background: #fff4cc;
     color: #8b6500;
 }
 
 .badge.info {
-    background: #dbeffb;
-    color: #22627b;
+    background: #d8efff;
+    color: #236b8e;
 }
 
 .badge.success {
-    background: #dff6e8;
-    color: #287347;
+    background: #dff8f2;
+    color: #217564;
 }
 
 .badge.danger {
@@ -314,7 +314,7 @@ main {
 }
 
 .review-box {
-    background: #f6fbfa;
+    background: #f3fbff;
     padding: 14px;
     border-radius: 18px;
     margin: 10px 0;
@@ -343,8 +343,8 @@ input,
 textarea,
 select {
     width: 100%;
-    border: 1px solid #cbe3df;
-    background: #fbfffe;
+    border: 1px solid #bddfeb;
+    background: #fbfeff;
     border-radius: 16px;
     padding: 12px 13px;
     font-family: inherit;
@@ -367,13 +367,13 @@ table {
 th,
 td {
     padding: 14px;
-    border-bottom: 1px solid #e5f1ee;
+    border-bottom: 1px solid #e1f1f8;
     text-align: left;
     vertical-align: top;
 }
 
 th {
-    background: #dff4ef;
+    background: #dff4ff;
     color: var(--dark);
 }
 
@@ -446,8 +446,8 @@ th {
     padding: 14px 16px;
     border-radius: 18px;
     margin: 12px 0;
-    background: #dff6e8;
-    color: #1d6b43;
+    background: #ddf7f2;
+    color: #1d6b60;
     font-weight: 700;
 }
 
@@ -461,7 +461,7 @@ th {
     grid-template-columns: 1fr 1fr;
     gap: 80px;
     padding: 60px 6%;
-    background: #173b3f;
+    background: linear-gradient(135deg, #173f5f, #214f68);
     color: white;
 }
 
@@ -475,11 +475,11 @@ th {
 .footer p {
     max-width: 520px;
     line-height: 1.8;
-    color: #d9f4ef;
+    color: #d9f5ff;
 }
 
 .footer a {
-    color: #d9f4ef;
+    color: #d9f5ff;
 }
 
 .admin-layout {
@@ -489,7 +489,7 @@ th {
 }
 
 .admin-sidebar {
-    background: var(--dark);
+    background: linear-gradient(180deg, #173f5f, #245f78);
     color: white;
     padding: 26px;
     position: sticky;
@@ -508,17 +508,17 @@ th {
     padding: 12px 14px;
     border-radius: 16px;
     margin: 7px 0;
-    color: #e4fbf7;
+    color: #e4f8ff;
     font-weight: 800;
 }
 
 .admin-sidebar a:hover {
-    background: rgba(255, 255, 255, .14);
+    background: rgba(255, 255, 255, .15);
 }
 
 .admin-main {
     padding: 30px;
-    background: linear-gradient(135deg, #f8fcfb, #e9f8f6);
+    background: linear-gradient(135deg, #f6fcff, #e5f6ff 55%, #e0f8f4);
 }
 
 .stats {
@@ -552,7 +552,7 @@ th {
     height: 68px;
     border-radius: 14px;
     object-fit: cover;
-    background: #eaf7f3;
+    background: #e3f7ff;
 }
 
 .inline {
@@ -565,13 +565,13 @@ th {
 
 .love {
     font-size: 15px;
-    color: #c55d72;
+    color: #5e9fc5;
     font-weight: 900;
 }
 
 .empty {
     padding: 28px;
-    border: 2px dashed #b9dcd6;
+    border: 2px dashed #b9ddeb;
     border-radius: 24px;
     text-align: center;
     color: var(--muted);
@@ -618,9 +618,9 @@ th {
 .preview-box {
     width: 100%;
     height: 390px;
-    border: 2px dashed #cbe3df;
+    border: 2px dashed #bddfeb;
     border-radius: 24px;
-    background: #fbfffe;
+    background: #fbfeff;
     display: flex;
     align-items: center;
     justify-content: center;

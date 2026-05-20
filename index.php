@@ -10,9 +10,9 @@
 
         <p>
             Blossom Florist hadir untuk merangkai bunga yang paling sesuai dengan 
-            suasana hati dengan penuh makna, mulai dari hadiah manis, ungkapan
+            penuh makna, mulai dari hadiah manis, ungkapan
             sayang, hingga momen bahagia.
-            Temukan pilihan terbaik untuk merayakan setiap detik berharga dengan memberikan kejutan kecil yang mampu 
+            Blossom pilihan terbaik untuk merayakan setiap detik berharga dengan memberikan kejutan kecil yang mampu 
             membuat hari terasa lebih indah dan berharga.
         </p>
 
@@ -23,13 +23,13 @@
 
     <img
         class="hero-img"
-        src="assets/img/hero.svg"
+        src="assets/img/hero.jpg"
         alt="Blossom Florist"
     >
 </section>
 
 <div class="section-title">
-    <h2>Filosofi Blossom</h2>
+    <h2>Blossom</h2>
 </div>
 
 <section class="grid">
@@ -42,7 +42,7 @@
     </div>
 
     <div class="card">
-        <h3>Bisa custom</h3>
+        <h3>Custom</h3>
         <p>
             Ingin dirangkai menjadi bouquet, satuan, tambah kartu ucapan,
             atau catatan khusus untuk florist.
@@ -59,7 +59,7 @@
 </section>
 
 <div id="meaning" class="section-title">
-    <h2>Arti bunga</h2>
+    <h2>Meaning of Flowers</h2>
     <p>
         Rnagkai momen dan makna terasa lebih personal, pilih bunga sesuai pesan yang ingin disampaikan.
     </p>
@@ -124,7 +124,7 @@
 
     <a
         class="btn secondary"
-        href="https://wa.me/6281234567890"
+        href="https://wa.me/628993332333"
         target="_blank"
     >
         Chat WhatsApp Toko
