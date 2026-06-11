@@ -1,8 +1,8 @@
-CREATE DATABASE IF NOT EXISTS blossom_florist
+CREATE DATABASE IF NOT EXISTS if0_41900303_blossom_florist
 CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci;
 
-USE blossom_florist;
+USE if0_41900303_blossom_florist;
 
 DROP TABLE IF EXISTS attendance;
 DROP TABLE IF EXISTS order_items;
