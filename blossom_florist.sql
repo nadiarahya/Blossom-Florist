@@ -64,7 +64,7 @@ CREATE TABLE orders (
     payment_proof VARCHAR(255),
     status ENUM(
         'Menunggu Pembayaran',
-        'Diproses',
+        'Dikemas',
         'Dikirim',
         'Selesai',
         'Dibatalkan'
@@ -104,13 +104,6 @@ VALUES
         '081234567890',
         '$2y$12$AjYZL1Hdj8bTOIhTuI7In.od45lBNjBJWU1ZRjzTYAoAqK.FhMUxy',
         'admin'
-    ),
-    (
-        'Member Demo',
-        'member@blossom.test',
-        '081298765432',
-        '$2y$12$AjYZL1Hdj8bTOIhTuI7In.od45lBNjBJWU1ZRjzTYAoAqK.FhMUxy',
-        'member'
     );
 
 INSERT INTO products(name, description, price, stock, image)
@@ -175,7 +168,7 @@ VALUES
 INSERT INTO reviews(product_id, reviewer_name, rating, comment)
 VALUES
     (1, 'Alya', 5, 'Bouquet-nya wangi dan wrapping-nya super cute.'),
-    (1, 'Nadya', 5, 'Cocok banget buat anniversary.'),
+    (1, 'Nadya', 5, 'Cocok banget buat anniversary  y.'),
     (2, 'Raka', 5, 'Bunganya fresh, bikin hadiah wisuda makin cerah.'),
     (4, 'Mira', 4, 'Warna tulipnya lembut dan cantik.'),
     (6, 'Salsa', 5, 'Peony-nya kelihatan premium dan imut.');
@@ -220,18 +213,6 @@ INSERT INTO orders(
 )
 VALUES
     (
-        2,
-        'Member Demo',
-        '081298765432',
-        'Jl. Mawar No. 7',
-        'Tangerang',
-        '15111',
-        'Dirangkai menjadi bouquet',
-        'Wrapping hijau pastel',
-        275000,
-        'QRIS',
-        'Selesai',
-        DATE_SUB(NOW(), INTERVAL 10 DAY)
     );
 
 INSERT INTO order_items(order_id, product_id, product_name, qty, price)

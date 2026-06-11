@@ -44,15 +44,14 @@
     <div class="card">
         <h3>Custom</h3>
         <p>
-            Ingin dirangkai menjadi bouquet, satuan, tambah kartu ucapan,
-            atau catatan khusus untuk florist.
+            Ingin dirangkai menjadi bouquet, satuan, serta tambah kartu ucapan khusus untuk seseorang yang dicintai.
         </p>
     </div>
 
     <div class="card">
         <h3>Metode pembayaran</h3>
         <p>
-            Checkout mudah dan simple, pemmbayaran hanya melalui QRIS toko 
+            Checkout mudah dan simple, pembayaran hanya melalui QRIS toko 
             dengan upload bukti pembayaran, sehingga pesanan diproses.
         </p>
     </div>
@@ -110,7 +109,7 @@
 
 <div class="section-title">
     <h2>Contact</h2>
-    <p>Butuh bantuan memilih produk? Chat admin kami.</p>
+    <p>Butuh bantuan terhadap produk? Chat admin kami.</p>
 </div>
 
 <section class="contact-strip">
@@ -118,7 +117,7 @@
         <h2>Pesan bunga hari ini, rangkai momen indah hari ini juga.</h2>
         <p>
             admin akan membantu konfirmasi stok, warna wrapping,
-            dan jadwal pengiriman.
+            dan jadwal pengiriman serta lainnya yang berkaitan dengan produk dan layanan kami.
         </p>
     </div>
 
